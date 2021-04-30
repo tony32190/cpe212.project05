@@ -6,7 +6,7 @@
 
 #define DICTIONARY_ALLOCATED_BLOCK 0x10
 
-
+// add std::vector implementation here
 template<typename KeyType, typename ValueType>
 struct Node
 {
@@ -22,7 +22,7 @@ struct Node
         left = nullptr;
         right = nullptr;
     }
-
+    // add std::vector implementation here
     Node(const Node<KeyType, ValueType> & other)
     {
         key = other.key;
@@ -30,7 +30,8 @@ struct Node
         right = other.right;
         left = other.left;
     }
-
+    
+    // add std::vector implementation here
     Node& operator=(const Node<KeyType, ValueType> & other)
     {
         key = other.key;
